@@ -1,0 +1,46 @@
+
+.canvasGame {
+    margin: auto;
+    height: 550px;
+    width: 500px;
+    background-color: green;
+    border-radius: 20px;
+    display: block;
+    justify-items: center;
+}
+canvas {
+    margin: auto;
+    width: 500px;
+    height: 500px;
+    background: black;
+    border-radius: 20px;
+    border: 10px green solid;
+}
+
+canvas.end {
+    animation: endAnimation 0.5s linear 1;
+}
+
+@keyframes endAnimation {
+
+    10%,
+    90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%,
+    80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%,
+    60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
